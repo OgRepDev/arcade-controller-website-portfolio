@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #130e20;
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* ---------------------- Navigation Elemets ---------------------- */
+
+.main__nav p {
+    font-size: 1.5rem;
+    color: rgb(180, 146, 243);
+    flex-grow: 2;
+    font-weight: 700;
+}
+
+.main__nav p span {
+    color: white;
+}
+
+.nav--middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 2;
+    list-style: none;
+}
+
+.nav--middle a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav--right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav--right li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+.nav--right li button {
+    padding: 10px  25px;
+    border-radius: 99px;
+    background-image: linear-gradient(to right, #523688 0%, #9b80c4 100%);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* ---------------------- Main Content Elemets ---------------------- */
+.main__content {
+    display: flex;
+    flex-direction: row;
+}
+
+.main__content--left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main__content--left h1{
+    font-size: 5rem;
+    background: -webkit-linear-gradient(#cfbcec, #6f4caf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main__content--left p {
+    opacity: 0.7;
+    margin-top: 50px;
+}
+
+.content--left-buttons button:first-child {
+    padding: 15px 30px;
+    border-radius: 99px;
+    border: none;
+    background-image: linear-gradient(to right, #523688 0%, #9b80c4 100%);
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+
+.content--left-buttons button {
+    padding: 15px 18px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.content--left-buttons span {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.main__content--right {
+    width: 55%;
+    flex-grow: 1;
+    background: radial-gradient(circle farthest-side, #413653 , #130e20);
+}
+
+.main__content--right img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ---------------------- Slider Elemets ---------------------- */
+.main__slides-controller {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-slide-left {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.button-slide-right {
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.slides-controller-dots i {
+    margin-right: 5px;
+}
+
+.slides-controller-dots i:last-child {
+    margin-right: 0;
+}
